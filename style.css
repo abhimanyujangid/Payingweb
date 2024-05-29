@@ -11,12 +11,15 @@ body {
 
 header {
     height: 80px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 115px;
-    position: relative;
+    position: fixed; /* Changed to fixed */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Make it full width */
+    background-color: #fff; /* Set a background color */
+    z-index: 1000; /* Ensure it is above other elements */
 }
 
 .logo-container {
@@ -82,7 +85,8 @@ header {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    background-color: lavenderblush;
+    background-color: #CDA5ff;
+    height: 100vh;
 }
 
 .carousel-container {
@@ -202,14 +206,14 @@ header {
     font-weight: bold;
 }
 
-.yellow-circle {
-    width: 300px;
-    height: 300px;
-    background-color: #ffd700;
+.lavender-circle {
+    width: 260px;
+    height: 260px;
+    background-color: #CDA5ff;
     border-radius: 50%;
     position: absolute;
-    right: -100px; /* Adjust position as needed */
-    bottom: -50px;  /* Adjust position as needed */
+    right: -30px; /* Adjust position as needed */
+    bottom: 60px;  /* Adjust position as needed */
     z-index: 0;
 }
 
@@ -220,7 +224,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 40px 115px;
-    background-color: lavender;
+    background-color: white;
 }
 
 .features-content {
@@ -257,9 +261,9 @@ header {
 }
 
 .feature-button {
-    background-color: rgb(255, 219, 231);
+    background-color: #CDA5ff;
     color: #000;
-    padding: 10px 15px;
+    padding: 6px 36px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
@@ -274,7 +278,7 @@ header {
 
 .feature-button-main {
     background-color: rgb(22, 22, 22);
-    color: #ececec;
+    color: #CDA5ff;
     padding: 10px 62px;
     border-radius: 25px;
     text-decoration: none;
@@ -284,16 +288,17 @@ header {
 }
 
 .feature-button-main:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: #CDA5ff;
     color: black;
 }
 
 .feature-button:hover {
-    background-color: lavenderblush;
+    background-color: black;
+    color: #CDA5ff;
 }
 
 .features-image img {
-    width: 100%;
+    width: 86%;
     max-width: 600px;
 }
 /*-----------------------features-section ----End----------------*/
@@ -356,8 +361,8 @@ header {
 }
 
 .feature-overview-button {
-    background-color: rgb(112, 112, 112);
-    color: white;
+    background-color: #CDA5ff;
+    color: rgb(0, 0, 0);
     padding: 10px 62px;
     border-radius: 25px;
     text-decoration: none;
@@ -368,6 +373,7 @@ header {
 
 .feature-overview-button:hover {
     background-color: rgb(0, 0, 0);
+    color:#CDA5ff;
 }
 
 /*------------------------features-overview ----Start-------------*/
@@ -376,7 +382,7 @@ header {
     background-color: #f9f9f9;
     padding: 40px 115px;
     font-size: 14px;
-    color: #000;
+    color: black;
 }
 
 .footer-container {
@@ -417,7 +423,7 @@ header {
 }
 
 .footer-column ul li a:hover {
-    color: #ffd700;
+    color: #6113c7;
 }
 
 .download-button {
@@ -432,7 +438,7 @@ header {
 }
 
 .download-button:hover {
-    background-color: #333;
+    background-color: #60458D;
 }
 
 .social-icons a {

@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextButton = document.querySelector('.next');
     let currentSlide = 0;
     let autoSlideCount = 0;
-    const maxAutoSlides = 3;
-    const slideInterval = 5000; // 5 seconds
+    const maxAutoSlides = 6;
+    const slideInterval = 6000; // 6 seconds
 
     function showSlide(index) {
         if (index >= slides.length) {
